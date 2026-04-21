@@ -438,7 +438,7 @@ width: 100%;
   font-style: italic;
   line-height: 1.54 ;
 }
-/* ============FEATURES================ */
+/* ============FEATURES 1================ */
 .features{
   margin-top: 135px;
   padding: 65px 0;
@@ -478,4 +478,24 @@ line-height: 1.75;
   height: 50px;
   width: 137px;
   background: var(--primary-color);
+}
+
+/* ============FEATURES 2================ */
+.features .body{
+  display: flex;
+  justify-content: space-between;
+}
+.features-2nd .body{
+  flex-direction: row-reverse;
+}
+.features-2nd{
+  margin-top: 70px;
+}
+.features-2nd .content{
+  width: 49%;
+}
+.features-2nd .images img{
+  width: 470px;
+  height: 440px;
+  
 }
