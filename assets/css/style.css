@@ -518,14 +518,15 @@ line-height: 1.75;
 }
 .blogs .blog-list{
   gap: 30px;
-
+  overflow: hidden;
   margin-top: 55px;
   display: flex;
 }
 .blogs .item{
-  width: 33.33%;
+  width: calc(33.33% - 20px);
   border-radius: 16px;
   background: #fff;
+  flex-shrink: 0;
 }
 
 .blogs .item:hover{
@@ -580,8 +581,27 @@ line-height: 1.75;
 
 .blogs .item .btn{
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 
 .blogs .item .btn:hover{
   background: var(--primary-color);
+}
+.blogs .dots{
+  gap: 6px;  
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.blogs .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5F5B53 ;
+  cursor: pointer;
+}
+.blogs .dot.active{
+  background: var(--primary-color);
+  cursor: default;
 }
